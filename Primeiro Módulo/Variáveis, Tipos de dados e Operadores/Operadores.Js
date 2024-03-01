@@ -208,3 +208,39 @@ console.log(pos);
 
     
 }
+
+// '===' Igual a, Inclusive o tipo. Verifica se dois valores são iguais em valor e tipo
+
+{
+    let v1 = "5"
+    let v2 = 5;
+
+    console.log(v1 === v2); // Irá retornar false pois os valores podem ser iguais mas não são do mesmo tipo
+}
+
+// '!==' Diferente, Inclusive o tipo. Verifica se dois valores são diferentes em valor ou tipo.
+
+{
+    let v1 = 5;
+    let v2 = "Opa";
+
+    console.log(v1 !== v2); // Irá retornar true pois os dois valores são diferentes inclusive de tipos diferentes.
+}
+
+// '>' Maior que.
+// '<' Menor que.
+// '>=' Maior ou igual.
+// '<=' Menor ou igual.
+
+// Realizam Operações numéricas entre operandos.
+
+{
+    let x = 5;
+    let y = 2;
+
+    console.log(x > y); // True
+    console.log(x >= y); // True
+    console.log(x < y); // False
+    console.log(x <= y); // False
+
+}
