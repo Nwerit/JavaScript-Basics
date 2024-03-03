@@ -150,7 +150,7 @@ let pos = -neg;
 console.log(pos);
 }
 
-// Operadores de atribuição.
+// Operadores de Comparação.
 
 // '==' Verifica se dois valores são iguais. (Coerção de tipo)
 
@@ -199,7 +199,6 @@ console.log(pos);
 
 // '!==' Diferença Estrita. Verifica se dois valores não são iguais ou se não são do mesmo tipo.
 
-
 {
     let val1 = "5";
     let val2 = 5;
@@ -209,30 +208,13 @@ console.log(pos);
     
 }
 
-// '===' Igual a, Inclusive o tipo. Verifica se dois valores são iguais em valor e tipo
-
-{
-    let v1 = "5"
-    let v2 = 5;
-
-    console.log(v1 === v2); // Irá retornar false pois os valores podem ser iguais mas não são do mesmo tipo
-}
-
-// '!==' Diferente, Inclusive o tipo. Verifica se dois valores são diferentes em valor ou tipo.
-
-{
-    let v1 = 5;
-    let v2 = "Opa";
-
-    console.log(v1 !== v2); // Irá retornar true pois os dois valores são diferentes inclusive de tipos diferentes.
-}
 
 // '>' Maior que.
 // '<' Menor que.
 // '>=' Maior ou igual.
 // '<=' Menor ou igual.
 
-// Realizam Operações numéricas entre operandos.
+// Realizam Comparações entre valores.
 
 {
     let x = 5;
@@ -242,5 +224,85 @@ console.log(pos);
     console.log(x >= y); // True
     console.log(x < y); // False
     console.log(x <= y); // False
+
+}
+
+
+//Operadores Lógicos.
+
+//'&&' Retorna verdadeiro sem ambos os operandos forem verdadeiros.
+//'||' retorna verdaediro se pelo menos um dos operandos for verdadeiro.
+//'!' inverte o valor do operando.
+
+{
+    let v1 = true;
+    let v2 = false;
+
+    console.log(v1 && v2); // 'false', pois somente o v1 é verdadeiro.
+    console.log(v1 || v2); // 'true', pois um dos valores é verdadeiro.
+    console.log(!(v1)) // 'false', pois inverteu o valor do v1 que era 'true'
+} 
+
+//Operador de concatenação
+
+//'+' Normalmente usado para concatenar 'Strings'
+
+{
+    let name = "jobson";
+    let nameRest = "Da Silva Santos";
+    let fullname = name + " " + nameRest;
+    console.log(fullname);
+}
+
+//Operadores Unários ou de Incremento.
+
+//'++' Incrementa 1 em uma variável.
+//'--' Decrementa 1 em uma variável.
+//'typeof' Exibe o tipo da variável, seja ele number, string e etc.
+//'+' Torna o valor de uma variável positivo.
+//'-' Torna o valor de uma variável negativo.
+
+// '++', '--'
+{
+    let valor1 = 5;
+    valor1++
+    console.log(valor1); // O resultado será 6 pois ouve incremento.
+
+}
+
+// Existe também pré, darei exemplo
+
+{
+    let valor1 = 5;
+    ++valor1
+    console.log(valor1); // Também irá imprimir 6 pois normalmente se é usado em um loop.
+}
+
+//'typeof'
+
+{
+    let valor = 10;
+    console.log(typeof valor); // retornara 'Number' pois 10 é tipo 'Number'.
+}
+
+//'+' (Positivação) Toda variável normalmente já é interpretada como valor positivo, por isso normalmente você não usa este operador.
+
+//'-' (Negativação)
+
+{
+    let v1 = 10;
+    let v2 = -v1 // passou a ser -10
+    console.log(v2);
+}
+
+// No caso de Strings ele faz a conversão antes de fazer a operação de negativação.
+
+
+//Operadores ternários. Avaliam a condição e retornam 'Valor1' se for verdadeira, caso contrário retornam 'valor2'
+
+{
+    let idade = 16;
+    let maiorIdade = (idade >= 18)? "Adulto" : "Menor de idade";
+    console.log(maiorIdade);
 
 }
