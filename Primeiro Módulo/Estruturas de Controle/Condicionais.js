@@ -59,3 +59,37 @@
             console.log("Dia inválido");                     
     }
 }
+
+
+// Também temos as declarações 'BREAK' e 'CONTINUE' no JavaScript, vamos demonstrar no loop 'FOR'
+
+//'BREAK' para a execução imediata do loop e continua a execução do programa. no caso, sai do loop.
+
+{
+    let v1 = 1;
+    let vMax = 100;
+
+    for(let i=v1; i<vMax; i++){
+        if(i % 2 == 0){
+        break
+        }
+        console.log(i);
+    }
+}
+
+
+// 'CONTINUE' é usado para cancelar uma iteração, e ir pra próxima iteração do loop, e por fim continue dentro do loop.
+
+// Usando 'CONTINUE' para imprimir somente os números pares 
+
+{
+    let v1 = 0;
+    let vMax = 100;
+
+    for (let i = v1; i<vMax; i++){
+        if(i % 2 !== 0){
+            continue
+        }
+        console.log(i);
+    }
+}
