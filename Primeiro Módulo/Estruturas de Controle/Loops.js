@@ -22,11 +22,39 @@ while(i <= 5){
 
 //'DO...WHILE' Executa o código pelo menos uma vez mesmo se a condição for falsa.
 
+{
 let valor = 3;
 do{
     console.log(valor);
 }while(valor == 5) 
-
+}
 // Como 'valor' não é igual a 5, ele executa o código uma vez mas logo em seguida para pois a condição é falsa.
 
+// Também temos as variáções do Loop 'FOR' são elas 'FOR...IN' e 'FOR...OF'.
 
+// O loop 'FOR  IN' Itera em cada posição da coleção, seja ele, array, ou objeto, normalmente usado para apontar o indice de cada elemento.
+
+{
+    let arr = [67, 54, 34, 96];
+    for(let i in arr){
+    console.log(i) //Saída: 0, 1, 2, 3
+    } 
+}
+
+// Caso eu quisesse acessar os elementos e exibir cada um deles a sintaxe do 'FOR...IN' deveria ser mais ou menos essa.
+
+{
+    let arr = [67, 54, 34, 96];
+    for(let i in arr){
+        console.log(arr[i]); //Saída: 67, 54, 34, 96 
+    }
+}
+
+// O loop 'FOR...OF' vai dentro do elemento da coleção que ele está iterando, o exemplo acima ficaria muito mais simples por exemplo.
+
+{
+    let arr = [67, 54, 34, 96];
+    for(let i of arr){
+        console.log(i);  //Saída: 67, 54, 34, 96
+    }
+}
