@@ -15,7 +15,8 @@ console.log(num);
 
 //'LET' tem escopo de bloco, veja um exemplo
 
-{let num= 50;
+{
+    let num= 50;
  {
   console.log("Seu número é: " + num);  
  }

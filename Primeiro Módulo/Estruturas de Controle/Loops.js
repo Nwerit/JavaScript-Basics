@@ -53,8 +53,8 @@ do{
 // O loop 'FOR...OF' vai dentro do elemento da coleção que ele está iterando, o exemplo acima ficaria muito mais simples por exemplo.
 
 {
-    let arr = [67, 54, 34, 96];
+    let arr = [67, 54, 34, 96, 94];
     for(let i of arr){
-        console.log(i);  //Saída: 67, 54, 34, 96
+        console.log(i);  //Saída: 67, 54, 34, 96, 94
     }
 }
