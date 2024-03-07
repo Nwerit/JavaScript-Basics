@@ -1,0 +1,1 @@
+// Funções são usadas para Reutilização de código, você pode chama-las.
