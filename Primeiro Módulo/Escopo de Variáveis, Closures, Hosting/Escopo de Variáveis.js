@@ -1,0 +1,1 @@
+// Escopo de This, Bloco, Global e de Função.
